@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+   
+        <h1>Users List</h1>
+        <div class="controls">
+            <h1>Sort By:</h1>
+            <br>
+            <select id="sort">
+                <option value="name-asc">A-Z</option>
+                <option value="name-desc">Z-A</option>
+                <option value="age-asc">Age (Ascending)</option>
+                <option value="age-desc">Age (Descending)</option>
+            </select>
+            <input type="text" id="filter" placeholder="Search name or surname">
+        </div> 
+        <div id="loader" class="loader">
+            <div class="pulse"></div>
+        </div>        
+        <ul id="user-list"></ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
